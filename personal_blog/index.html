@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Blogum</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyasını ekle -->
+</head>
+<body>
+    <header>
+        <h1>Benim Blogum</h1>
+        <p>Merhaba, ben Esranur ÇİNAR. Hedeflerim ve becerilerim bu blogda!</p>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menü</button>
+            <div class="dropdown-content">
+                <button onclick="openPage('hakkinda.html')">Hakkımda</button>
+                <button onclick="openPage('projeler.html')">Projeler</button>
+                <button onclick="openPage('iletisim.html')">İletişim</button>
+                <button onclick="openPage('blog.html')">Blog Yazıları</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Hoş Geldiniz!</h2>
+        <p>Bu benim kişisel blogum. Burada projelerimi ve düşüncelerimi paylaşacağım.</p>
+
+        <h3>ablamveben</h3>
+        <img src="ablamveben.jpg" alt="ablamveben" width="600">
+
+        <h3>yansımalar</h3>
+        <video width="600" controls>
+            <source src="yansımalar.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Esranur ÇİNAR.2211012050 Bütün hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
